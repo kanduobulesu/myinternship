@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=IBM+Plex+Serif:ital@1&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Alegreya+Sans&family=IBM+Plex+Serif:ital@1&family=Roboto+Condensed&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3a88ac550.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+
+:root {
+    --primary: red;
+    --secondary: pink;
+    --light: blue;
+}
+
+.nav1 {
+    width: 100%;
+    height: 7vh;
+    box-shadow: 0px 3px 5px orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: wrap;
+    background-color:#39f17a ;
+    color: rgb(73, 28, 99);
+}
+
+.left {
+    font-size: 20px;
+}
+
+.left span {
+    margin-right: 3px;
+    color: #f74006;
+   
+}
+
+.left a {
+    text-decoration: none;
+    margin-right: 4px;
+    color: orange;
+}
+
+.right {
+    font-size: 20px;
+}
+
+.right .fa-brands {
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #E64A19;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    transition: o.5s;
+    cursor: pointer;
+    
+}
+
+.right .fa-brands:hover {
+    transform: rotate(180deg);
+}
+
+.nav2 {
+    width: 100%;
+    height: 15vh;
+    background-color: #4a0567;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: wrap;
+    color: #0656f7;
+}
+
+.left2 {
+    position: relative;
+    left: -47px;
+    font-size: 20px;
+}
+
+.left2 i {
+
+    /* margin-block-end: auto; */
+    margin-right: 4px;
+    cursor: pointer;
+    color: orange;
+}
+
+.center {
+    position: relative;
+    right: 50px;
+}
+
+.center p {
+    margin-top: 10px;
+    color: orange;
+}
+
+.right2 {
+    font-size: 20px;
+}
+
+.right2 i {
+    cursor: pointer;
+    color: orange;
+}
+
+.nav3 {
+    width: 100%;
+    height: 9vh;
+    background-color:#06c17d ;
+}
+
+.nav3 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav3 ul li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    padding: 9px;
+    cursor: pointer;
+    color: #0d1849;
+
+}
+.nav3 ul li a i{
+    color: orange;
+
+}
+
+.nav3 ul li a:hover {
+    color: rgb(0, 255, 72);
+
+}
+
+.nav3 ul ul {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background-image: url(bookstore.jpg);
+    background-size: cover;
+   /* background: linear-gradient(50deg, #4a0567, #4a0569),
+                url(g1.jpg);*/
+    background-position: top;
+}
+
+.main .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    flex-direction: column;
+    position: relative;
+    top: 193px;
+    /* right: 30px; */
+    left: 239px;
+}
+
+.btn {
+    margin-bottom: 30px;
+    background-color: #28e8eb;
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    color: rgb(38, 51, 247);
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(0, 255, 72);
+}
+
+.text h1 {
+    font-size: 44px;
+    width: 159%;
+    height: 40px;
+   /* background-color: pink;*/
+    cursor: pointer;
+    color: #130501;
+}
+
+.text h1:hover {
+    color:  rgb(0, 72, 255);
+    font-size: 50px;
+}
+
+.product {
+    width: 100%;
+    height: 25vh;
+   /* background-color: #695c45;*/
+
+}
+
+.matter {
+    padding: 39px;
+    width: 100%;
+    height: 25vh;
+    background-color: #62b4ee;
+    text-align: center;
+    color: #4a0567;
+}
+
+.matter h2 {
+    font-size: 45px;
+    color:#05245d ;
+
+}
+
+.matter p {
+    margin-top: 10px;
+    color: rgb(15, 9, 22);
+    font-size: 25px;
+
+}
+
+.shoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: rgb(243, 229, 179);
+    color: #4559a5;
+}
+
+.items {
+    flex-basis: 20%;
+    padding: 38px;
+}
+
+.items img {
+    width: 70%;
+    height: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.items span {
+    color: goldenrod;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.items h1 {
+    font-size: 23px;
+
+}
+
+.items p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.btn2 {
+    color: #ffff;
+    background-color: rgb(0, 34, 255);
+    border-radius: 9px;
+    width: 44%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.items:hover img,
+.items:hover h1 {
+    width: 93%;
+    color:rgb(255, 0, 179) ;
+}
+
+.item::before {
+    content: '20% off';
+    width: 25%;
+    height: 25%;
+    line-height: 25%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    padding: 0px 4px;
+    transform: rotate(20deg);
+}
+
+.trends {
+    padding: 50px 100px;
+    background-color: orange;
+}
+
+.trends .swiper {
+    width: 100%;
+    padding: 50px;
+
+}
+
+.trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #18153b, #021af3);
+    height: 29vh;
+    color: #ffff;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 35px; */
+    /* background-color: pink; */
+    /* padding-top: 15px; */
+    height: 27vh;
+}
+
+#first {
+    width: 27%;
+}
+
+#first h2 {
+    font-size: 29px;
+    margin-bottom: 3px;
+}
+
+#first p {
+    font-size: 20px;
+
+}
+
+#second h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+#second p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+#third h2 {
+    font-size: 29px;
+}
+.li ul{
+    list-style-type: none;
+}
+.li ul li{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.li ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffff;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav1">
+            <div class="left">
+                <span>Welcome to my BooksHub</span>
+                <a href="#">Register</a> Or
+                <a href="#">Login</a>
+            </div>
+            <div class="right">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+        </div>
+        <!--nav2-->
+        <!--nav2-->
+        <div class="nav2">
+            <div class="left2">
+                <i class="fa-solid fa-phone"></i>+91 9381720931
+                <i class="fa-solid fa-envelope"></i>kanduobulesu@gmail.com
+            </div>
+            <div class="center">
+                <h1>BooksHub</h1>
+                <p>Read the History and Future</p>
+            </div>
+            <div class="right2">
+                <i class="fa-solid fa-address-book"></i>Contact us
+            </div>
+        </div>
+        <!--nav3-->
+        <!--nav3-->
+        <div class="nav3">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>Story Books</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>Academic Books</a></li>
+                <li><a href="#"><i class="fa-solid fa-anchor"></i>Personality Development
+                        <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-clipboard"></i>Attitude</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-o"></i>Anger Management</a></li>
+                        <li><a href="#"><i class="fa-solid fa-gavel"></i>Mindset</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="#"><i class="fa-solid fa-calender-check-o"></i>Special offer</a></li>
+                <li><a href="#"><i class="fa-solid fa-search"></i>Find</a></li>
+            </ul>
+        </div>
+        <!--main img-->
+        <!--main img-->
+        <div class="main">
+            <div class="text">
+                <button class="btn">Coming Soon</button>
+                <h1>Our New Collection</h1>
+            </div>
+
+        </div>
+    </header>
+    <div class="product">
+        <div class="matter">
+            <h2>New Arrival</h2>
+            <p>These books will change your learning perspective</p>
+        </div>
+    </div>
+    <div class="shoes">
+        <div class="items">
+            <div>
+                <img src="history.jpeg" alt="History Collection">
+            </div>
+            <h1>History collection(3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="fantasy.jpeg" alt="Fantasy Collection">
+            </div>
+            <h1>Fantasy collection(3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="sciencefiction.jpeg" alt="Science Fiction Collection">
+            </div>
+            <h1>Science Fiction(3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="angermanagement.jpeg" alt="Anger Management">
+            </div>
+            <h1>Anger Management</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+    </div>
+    <!--second-->
+    <div class="shoes">
+        <div class="items">
+            <div>
+                <img src="biography.jpg" alt="Biography Collection">
+            </div>
+            <h1>Biography collection(3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="poetry.jpg" alt="Poetry Collection">
+            </div>
+            <h1>Poetry collection(3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="mindset.jpeg" alt="Mindset Collection">
+            </div>
+            <h1>Mindset Collection(3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="attitude.jpeg" alt="Attitude">
+            </div>
+            <h1>Attitude</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--beauty product-->
+    <div class="product">
+        <div class="matter">
+            <h2>Popular Books</h2>
+            <p>While reading these books gives more satisfaction.</p>
+        </div>
+    </div>
+    <div class="shoes">
+        <div class="items">
+            <div>
+                <img src="adventures.webp" alt="Adventures">
+            </div>
+            <h1> Adventures (3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="politics.jpeg" alt="Politics">
+            </div>
+            <h1> Politics (3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="comic.jpeg" alt="Comic Collection">
+            </div>
+            <h1> Comic (3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+        <div class="items">
+            <div>
+                <img src="crimepunishment.jpeg" alt="">
+            </div>
+            <h1>Crime and Punishment (3)</h1>
+            <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </span>
+            <p>$500.00</p>
+            <button class="btn2">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--beauty product-->
+
+    <!--trend product-->
+    
+    
+
+    <!--trend product-->
+    <!--footer-->
+    <footer>
+        <div class="row">
+            <div class="col" id="first">
+                <h2>Brand New</h2>
+                <P>It is about my house i am gonna build my own house for any some day with i definatly construct.witch
+                    is been going to tne wright to been witch acquire not defined.</P>
+            </div>
+            <div class="col" id="second">
+                <h2>Address</h2>
+                <p>Kamalapuram</p>
+                <p>Kamalapuram(Mandal)</p>
+                <p>Andhrapradesh,PIN:516289</p>
+                <p class="email">kanduobulesu@gmail.com</p>
+                <p class="ph">+91 9381720931</p>
+            </div>
+            <div class="col" id="third">
+                <h2>Links</h2>
+                <div class="li">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!--footer end-->
+
+    <!--script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 1200,
+                modifier: 1,
+                slideShadows: false,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
